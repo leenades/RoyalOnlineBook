@@ -1,0 +1,517 @@
+<html>
+    <head>
+        <title>Royal Online Book</title>
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="website-container">
+            <!-- NAVBAR START -->
+            <nav class="navbar navbar-dark navbar-expand-lg navbar-menu">
+                <div class="float-left">
+                    <a href="C:\Users\unite\Desktop\RoyalOnlineBook\index.html" rel="noopener" target="_self" aria-label="main page">
+                        <span class="navbar-brand m-0 p-0 h1">
+                            <picture>
+                                <source media="(min-width:1025px)" srcset="../Assets/Image/logo.png">
+                                <source media="(min-width:320px)" srcset="../Assets/Image/logores.png">
+                                <img src="../Assets/Image/logo.png" alt="Royal Online Book Logo"/>
+                            </picture>
+                        </span>
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>    
+                <div class="collapse navbar-list navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav navbar-items-container mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" aria-label="todays events">Today's Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="innerPages/casino.html" aria-label="casino">Live Casino</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="C:\Users\unite\Desktop\RoyalOnlineBook\index.html#liveSports" aria-label="casino">Live Sports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="C:\Users\unite\Desktop\RoyalOnlineBook\index.html#slotsGames" aria-label="casino">Slots</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="float-right">
+                    <div class="secondary-navbar container-fluid d-inline-block">
+                        <div class="time-date-container d-inline">
+                            <div class="date-container d-inline">
+        
+                            </div>
+                            <div class="time-container d-inline">
+        
+                            </div>
+                        </div>
+                        <div class="contact-us-whatsapp d-inline">
+                            <span>
+                                <a href="https://wa.me/447979793979" rel="noopener" target="_self" aria-label="Whatsapp chat">
+                                    <i class="fa fa-whatsapp"><p>+44 7979793979</p></i>
+                                </a>
+                            </span>
+                            <span>
+                                <a href="https://wa.me/447979797935" rel="noopener" target="_self" aria-label="Whatsapp chat">
+                                    <i class="fa fa-whatsapp"><p>+44 7979797935</p></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="nav-buttons-container">
+                        <div class="deposit-and-withdrawal-btn">
+                            <a href="#" target="_self" rel="noopener" aria-label="Deposit" class="btn button-styles deposit" data-toggle="modal" data-target="#depositModal">Deposit</a>
+                            <a href="#" target="_self" rel="noopener" aria-label="withdrawal" class="btn button-styles withdrawal" data-toggle="modal" data-target="#withdrawalModal">Withdrawal</a>
+                        </div>
+                        <div class="button-container">
+                            <a href="#" target="_" rel="noopener" aria-label="join us" class="btn button-styles join-us-btn" data-toggle="modal" data-target="#joinUsModal">JOIN US</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- NAVBAR END -->
+
+            <!-- Deposit MODAL START -->
+            <div class="modal fade modal-container-first" id="depositModal" tabindex="-1" role="dialog" aria-labelledby="depositModal" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content modal-content-styles">
+                    <div class="modal-body">
+                        <div class="modal-header-styles"><h3>Deposit/Pay now</h3></div>
+                        <form method="POST" action="" class="modal-form-style">
+                            <div class="form-group">
+                                <select id="depositExchange" class="exchange-type">
+                                    <option selected disabled>Exchange</option>
+                                    <option value="diamondExch">Diamond Exchange</option>
+                                    <option value="tenExch">Ten Exchange</option>
+                                    <option value="tajExch">Taj Exchange</option>
+                                    <option value="lordsExch">Lords Exchange</option>
+                                    <option value="lotusExch">Lotus Exchange</option>
+                                    <option value="wolfExch">Wolf777 Exchange</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="" id="inputUsername" name="usernameff" aria-describedby="username" required>
+                                <label>username</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="" id="inputPassword" name="pass" aria-describedby="password" required>
+                                <label>password</label>
+                            </div>
+                            <div class="form-group" id="currencyDeposit">
+                                
+                            </div>
+                            <div class="form-group">
+                                <input type="number" class="" id="inputAmount" name="amount" aria-describedby="deposit amount" required>
+                                <label>Amount</label>
+                                <small class="small-text-deposit"></small>
+                            </div>
+                            <div class="form-group">
+                                <button class="" data-dismiss="modal">Cancel</button>
+                                <button class="" id="depositBtn">Deposit</button>
+                            </div>
+                        </form>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- Deposit MODAL END -->
+
+            <!-- Withdrawal MODAL START -->
+            <div class="modal fade modal-container-first" id="withdrawalModal" tabindex="-1" role="dialog" aria-labelledby="withdrawalModal" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content modal-content-styles">
+                    <div class="modal-body">
+                        <div class="modal-header-styles"><h3>Withdrawal</h3></div>
+                        <form method="POST" action="" class="modal-form-style">
+                            <div class="form-group">
+                                <select id="withdrawalExchange" class="exchange-type">
+                                    <option selected disabled>Exchange</option>
+                                    <option value="diamondExch">Diamond Exchange</option>
+                                    <option value="tenExch">Ten Exchange</option>
+                                    <option value="tajExch">Taj Exchange</option>
+                                    <option value="lordsExch">Lords Exchange</option>
+                                    <option value="lotusExch">Lotus Exchange</option>
+                                    <option value="wolfExch">Wolf777 Exchange</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="" id="inputUsernameW" name="usernameff" aria-describedby="username" required>
+                                <label>username</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="" id="inputPasswordW" name="pass" aria-describedby="password" required>
+                                <label>password</label>
+                            </div>
+                            <div class="form-group" id="currencyWithdrawal">
+                                
+                            </div>
+                            <div class="form-group">
+                                <input type="number" class="" id="inputAmountWithdrawal" name="amount" aria-describedby="deposit amount" required>
+                                <label>Amount</label>
+                                <small class="small-text-deposit"></small>
+                            </div>
+                            <div class="form-group">
+                                <button class="" data-dismiss="modal">Cancel</button>
+                                <button class="" id="withdrawalBtn">Withdraw</button>
+                            </div>
+                        </form>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- Withdrawal MODAL END -->
+
+            <!-- JOIN US MODAL START -->
+            <div class="modal fade modal-container-first" id="joinUsModal" tabindex="-1" role="dialog" aria-labelledby="joinUsModal" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content modal-content-styles">
+                    <div class="modal-body">
+                        <div class="modal-header-styles"><h3>JOIN US</h3></div>
+                        <form method="POST" action="" class="modal-form-style">
+                            <div class="form-group">
+                                <input type="text" class="" id="inputUsername" name="usernameff" aria-describedby="username" required>
+                                <label>username</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="" id="inputEmail" name="email" aria-describedby="email" required>
+                                <label>email</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="" id="inputPassword" name="pass" aria-describedby="password" required>
+                                <label>password</label>
+                            </div>
+                            <div class="form-group checkbox-form-group">
+                                <input type="checkbox" id="checkboxEmails" name="checkbox1" class="checkboxes" aria-describedby="checkboxEmailsRecieve">
+                                <label>I want to recieve emails</label>
+                            </div>
+                            <div class="form-group checkbox-form-group">
+                                <input type="checkbox" id="checkboxLegalAge" name="checkbox2" class="checkboxes" aria-describedby="checkboxLegal" required>
+                                <label>I am 18 years old and older</label>
+                            </div>
+                            <div class="form-group">
+                                <button class="" data-dismiss="modal">Cancel</button>
+                                <button class="">JOIN</button>
+                            </div>
+                        </form>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- JOIN US MODAL END -->
+
+
+            <!-- LIVE CASINO SECTION START -->
+            <section class="live-games-section" id="liveCasinoGames">
+                <div class="container-fluid">
+                    <!-- image section start -->
+                    <div id="carouselExampleIndicators" class="carousel slide carousel-fade image-slider casino-slider" data-ride="carousel">
+                        <ol class="carousel-indicators carousel-buttons-styles">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <picture>
+                                <source media="(min-width:1025px)" srcset="../Assets/Image/casinoslider1.png">
+                                <source media="(min-width:320px)" srcset="../Assets/Image/caisnoreslider1.png">
+                                <img src="../Assets/Image/casinoslider1.png" alt="Wolf777">
+                            </picture>
+                        </div>
+                        <div class="carousel-item">
+                            <picture>
+                                <source media="(min-width:1025px)" srcset="../Assets/Image/casinoslider2.png">
+                                <source media="(min-width:320px)" srcset="../Assets/Image/caisnoreslider2.png">
+                                <img src="../Assets/Image/casinoslider2.png" alt="Wolf777">
+                            </picture>
+                        </div>
+                        <div class="carousel-item">
+                            <picture>
+                                <source media="(min-width:1025px)" srcset="../Assets/Image/casinoslider3.png">
+                                <source media="(min-width:320px)" srcset="../Assets/Image/caisnoreslider3.png">
+                                <img src="../Assets/Image/casinoslider3.png" alt="Wolf777">
+                            </picture>
+                        </div>
+                        </div>
+                        <a class="carousel-control-prev carousel-controls" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next carousel-controls" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <!-- image section end -->
+                    <div class="live-casino-games">
+                        <div class="header-games mt-3">
+                            <h2>Live casino</h2>
+                        </div>
+                        <div class="games-blurbs">
+                            <div class="blurb">
+                                <a href="#" target="_self" rel="noopener" aria-label="casino meter">
+                                    <img src="../Assets/Image/games/livegames.png" alt="casino meter"/>
+                                </a>
+                                <div class="hover-over-style">
+                                    <button>PLAY NOW</button>
+                                </div>
+                                <h4>Casino meter</h4>
+                            </div>
+                            <div class="blurb">
+                                <a href="#" target="_self" rel="noopener" aria-label="Teenpatti">
+                                    <img src="../Assets/Image/games/livegames2.png" alt="Teenpatti"/>
+                                </a>
+                                <div class="hover-over-style">
+                                    <button>PLAY NOW</button>
+                                </div>
+                                <h4>Teenpatti</h4>
+                            </div>
+                            <div class="blurb">
+                                <a href="#" target="_self" rel="noopener" aria-label="baccarat">
+                                    <img src="../Assets/Image/games/livegames3.png" alt="baccarat"/>
+                                </a>
+                                <div class="hover-over-style">
+                                    <button>PLAY NOW</button>
+                                </div>
+                                <h4>baccarat</h4>
+                            </div>
+                            <div class="blurb">
+                                <a href="#" target="_self" rel="noopener" aria-label="Lightning roulette">
+                                    <img src="../Assets/Image/games/livegames4.png" alt="Lightning roulette"/>
+                                </a>
+                                <div class="hover-over-style">
+                                    <button>PLAY NOW</button>
+                                </div>
+                                <h4>Lightning roulette</h4>
+                            </div>
+                            <div class="blurb">
+                                <a href="#" target="_self" rel="noopener" aria-label="andar bahar">
+                                    <img src="../Assets/Image/games/livegames5.png" alt="andar Bahar"/>
+                                </a>
+                                <div class="hover-over-style">
+                                    <button>PLAY NOW</button>
+                                </div>
+                                <h4>Andar Bahar</h4>
+                            </div>
+                            <div class="blurb">
+                                <a href="#" target="_self" rel="noopener" aria-label="20 - 20 Poker">
+                                    <img src="../Assets/Image/games/livegames6.png" alt="20 - 20 Poker"/>
+                                </a>
+                                <div class="hover-over-style">
+                                    <button>PLAY NOW</button>
+                                </div>
+                                <h4>20 - 20 Poker</h4>
+                            </div>
+                            <div class="blurb">
+                                <a href="#" target="_self" rel="noopener" aria-label="casino queen">
+                                    <img src="../Assets/Image/games/livegames7.png" alt="casino QUEEN"/>
+                                </a>
+                                <div class="hover-over-style">
+                                    <button>PLAY NOW</button>
+                                </div>
+                                <h4>casino QUEEN</h4>
+                            </div>
+                            <div class="blurb">
+                                <a href="#" target="_self" rel="noopener" aria-label="32 cards">
+                                    <img src="../Assets/Image/games/32cards.png" alt="32 cards"/>
+                                </a>
+                                <div class="hover-over-style">
+                                    <button>PLAY NOW</button>
+                                </div>
+                                <h4>32 CARDS</h4>
+                            </div>
+                            <div class="blurb">
+                                <a href="#" target="_self" rel="noopener" aria-label="Roulette">
+                                    <img src="../Assets/Image/games/livegames9.png" alt="Roulette"/>
+                                </a>
+                                <div class="hover-over-style">
+                                    <button>PLAY NOW</button>
+                                </div>
+                                <h4>Roulette</h4>
+                            </div>
+                            <div class="blurb">
+                                <a href="#" target="_self" rel="noopener" aria-label="Live baccarat">
+                                    <img src="../Assets/Image/games/livegames10.png" alt="Live baccarat"/>
+                                </a>
+                                <div class="hover-over-style">
+                                    <button>PLAY NOW</button>
+                                </div>
+                                <h4>Live baccarat</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- LIVE CASINO SECTION END -->
+
+            <!-- footer start -->
+            <footer class="footer-section" id="footerSection">
+                <div class="row fixed-footer">
+                    <img src="../Assets/Image/lasvegas-transparent.png" width="100%" alt="las vegas"/>
+                </div>
+            </footer>
+            <!-- footer end -->
+
+            <!-- Follow US  and payment methodsSTART -->
+            <section class="aboutus-section">
+                <div class="row section-container">
+                    <div class="col">
+                        <div class="row section-header">
+                            <h2>follow us</h2>
+                        </div>
+                        <div class="row section-contents">
+                            <div class="col social-media-contents">
+                                <a aria-label="instagram" href="https://www.instagram.com/royalbookonline/" target="_self" rel="noopener"><img src="../Assets/Image/insta.png" alt="instagram"/></a>
+                                <a aria-label="telegram" href="https://t.me/Royalonlinebookk" target="_self" rel="noopener"><img src="../Assets/Image/telegram.png" alt="Telegram"/></a>
+                                <a aria-label="reddit" href="https://www.reddit.com/user/Royalonlinebook" target="_self" rel="noopener"><img src="../Assets/Image/reddit.png" alt="Reddit"/></a>
+                                <a aria-label="facebook" href="https://www.facebook.com/royalonlinebook/" target="_self" rel="noopener"><img src="../Assets/Image/facebook.png" alt="Facebook"/></a>
+                                <a aria-label="whatsapp" href="https://wa.me/447979797935" target="_self" rel="noopener"><img src="../Assets/Image/whatsapp-icon.png" alt="Whatsapp"/></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row section-header">
+                            <h2>Gambling Therapy</h2>
+                        </div>
+                        <div class="row section-contents">
+                            <div class="col">
+                                <ul class="footer-items">
+                                    <li class="footer-item">
+                                        <span><i class="fa fa-link"></i></span>
+                                        <a href="https://www.gamblingtherapy.org/en" target="_blank" rel="noopener" aria-label="gambling therapy">gambling therapy
+                                        </a>
+                                    </li>
+                                    <li class="footer-item">
+                                        <span><i class="fa fa-link"></i></span>
+                                        <a href="https://www.gamcare.org.uk" target="_blank" rel="noopener" aria-label="GamCare">GamCare</a>
+                                    </li>
+                                    <li class="footer-item">
+                                        <a aria-label="gambling therapy" href="https://validator.antillephone.com/validate?domain=wolf777.com&seal_id=0ef0bc08dfe93fc67e5bd6c6c6a9084baaaf76df971ff53980d18cc2f2fb4a6fe44a4f352eaf559e7f1ea2d3bd2e5b06&stamp=554e134f05e2919cae134e9c7d136c5a" target="_self" rel="noopener">
+                                            <img src="../Assets/Image/gamblingtherapy1.png" alt="gambling therapy"/>
+                                        </a>
+                                        <a href="#" target="_self" rel="noopener" aria-label="gambling therapy">
+                                            <img src="../Assets/Image/gamblingtherapy4.png" alt="gambling therapy"/>
+                                        </a>
+                                        <a href="https://www.gamblingtherapy.org/en" target="_self" rel="noopener" aria-label="gambling therapy">
+                                            <img src="../Assets/Image/gamblingtherapy3.png" alt="gambling therapy"/>
+                                        </a>
+                                        <a href="https://www.gamcare.org.uk/" target="_self" rel="noopener" aria-label="gambling therapy">
+                                            <img src="../Assets/Image/gamblingtherapy2.png" alt="gambling therapy"/>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row section-header">
+                            <h2>Payment Methods</h2>
+                        </div>
+                        <div class="row section-contents payment">
+                            <!-- after every four cols (go to a new line) -->
+                            <div class="col-md-2 mt-2 mr-2 p-0">
+                                <img src="../Assets/Image/bhim.png" alt="BHIM" class="w-100"/>
+                            </div>
+                            <div class="col-md-2 mt-2 mr-2 p-0">
+                                <img src="../Assets/Image/upi.png" alt="UPI" class="w-100"/>
+                            </div>
+                            <div class="col-md-2 mt-2 mr-2 p-0">
+                                <img src="../Assets/Image/imps.png" alt="imps" class="w-100"/>
+                            </div>
+                            <div class="col-md-2 mt-2 mr-2 p-0">
+                                <img src="../Assets/Image/paytm.png" alt="paytm" class="w-100"/>
+                            </div>
+                            <div class="w-100">
+                            </div>
+                            <div class="col-md-2 mt-2 mr-2 p-0">
+                                <img src="../Assets/Image/airtel.png" alt="airtel" class="w-100"/>
+                            </div>
+                            <div class="col-md-2 mt-2 mr-2 p-0">
+                                <img src="../Assets/Image/freecharge.png" alt="free charge" class="w-100"/>
+                            </div>
+                            <div class="col-md-2 mt-2 mr-2 p-0">
+                                <img src="../Assets/Image/phonepe.png" alt="phonepe" class="w-100"/>
+                            </div>
+                            <div class="col-md-2 mt-2 mr-2 p-0">
+                                <img src="../Assets/Image/oxigen.png" alt="oxigen" class="w-100"/>
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="col-md-2 mt-2 mr-2 p-0">
+                                <img src="../Assets/Image/bank.png" alt="bank" class="w-100"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- follow US END -->
+
+            <!-- Secondary footer START -->
+            <section class="secondary-footer">
+                <div class="secondary-footer-contents text-right">
+                    <span><a href="#" target="_self" rel="noopener" aria-label="terms and conditions">Terms & conditions</a></span>
+                    <span><a href="#" target="_self" rel="noopener" aria-label="Privacy adn policy">Privacy and policy</a></span>
+                    <span><a href="#" target="_self" rel="noopener" aria-label="rules and regulations">Rules and regulations</a></span>
+                </div>
+            </section>
+            <!-- Secondary footer END -->
+
+            <!-- whatsapp chatbot START -->
+            <div class="whatsapp-chatbot d-none">
+                <div class="whatsappheader-title">
+                    <div class="close-btn">
+                        <button id="close-btn">X</button>
+                    </div>
+                    <div class="whatsapp-img-container">
+                        <img src="../Assets/Image/whatsapp-img.png" alt="Royal Online Book whatsapp image"/>
+                    </div>
+                    <h6>Royal Online Book</h6>
+                    <small>Available</small>
+                </div>
+                <div class="whatsapp-body">
+                    <div class="whatsapp-chatbubble">
+                        <div class="chatbubble-container">
+
+                            <h6>Royal Online Book</h6>
+                            <p>Hi there! How can we help you?</p>
+                            <small>1:40</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="whatsapp-send-msg">
+                    <input type="text" class="response-input" name="" aria-label="whatsapp text message" placeholder="Write a responsed..">
+                    <div class="sendbtn-image-whatsapp">
+                        <a href="#" class="send-it" rel="noopener" target="_self" aria-label="whatsapp send button">
+                            <img src="../Assets/Image/whatsapp-sendbtn.png" alt="send button" class="w-100"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a class='blantershow-chat' href='#' id="chat-with-us" rel="noopener" target="_self" title='Show Chat'>
+                <svg width="20" viewBox="0 0 24 24"><defs/>
+                   <path fill="#eceff1" d="M20.5 3.4A12.1 12.1 0 0012 0 12 12 0 001.7 17.8L0 24l6.3-1.7c2.8 1.5 5 1.4 5.8 1.5a12 12 0 008.4-20.3z"/>
+                   <path fill="#4caf50" d="M12 21.8c-3.1 0-5.2-1.6-5.4-1.6l-3.7 1 1-3.7-.3-.4A9.9 9.9 0 012.1 12a10 10 0 0117-7 9.9 9.9 0 01-7 16.9z"/>
+                   <path fill="#fafafa" d="M17.5 14.3c-.3 0-1.8-.8-2-.9-.7-.2-.5 0-1.7 1.3-.1.2-.3.2-.6.1s-1.3-.5-2.4-1.5a9 9 0 01-1.7-2c-.3-.6.4-.6 1-1.7l-.1-.5-1-2.2c-.2-.6-.4-.5-.6-.5-.6 0-1 0-1.4.3-1.6 1.8-1.2 3.6.2 5.6 2.7 3.5 4.2 4.2 6.8 5 .7.3 1.4.3 1.9.2.6 0 1.7-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4z"/>
+                </svg> Chat with Us
+            </a>
+            <!-- whatsapp chatbot END -->
+        </div>
+        <script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+        <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" 
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" 
+        crossorigin="anonymous"></script>
+        <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" 
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" 
+        crossorigin="anonymous"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <script src="../js/script.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,801 @@
+/* website container */
+.website-container {
+    overflow-x: hidden;
+    background: #011e2c;
+}
+/* navbar */
+.website-container .navbar-menu {
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(45deg ,#011e2c 60%, #004263);
+    border-bottom: 2px solid #d5b550;
+    display: flex;
+    justify-content: space-between;
+    transition: all .3s ease-in;
+} 
+.website-container .navbar-menu.height-auto {
+    height: fit-content !important;
+}
+.website-container .navbar-menu .navbar-list .navbar-items-container  .nav-item > a {
+    color: #ffffff;
+    transition: all .1s ease-in;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 5px 20px;
+}
+.website-container .navbar-menu .navbar-list .navbar-items-container  .dropdown-menu {
+    background-color: #011e2c;
+}
+.website-container .navbar-menu .navbar-list .navbar-items-container .dropdown-menu > .dropdown-item {
+    color: #fff;
+    transition: all .3s ease;
+}
+.website-container .navbar-menu .navbar-list .navbar-items-container .dropdown-menu > .dropdown-item:hover {
+    background-color: #d5b550;
+}
+.website-container .navbar-menu .navbar-list .navbar-items-container .nav-item:hover > a {
+    color: #d5b550;
+}
+.website-container .navbar-menu .navbar-toggler{
+    position: absolute;
+    top: 8rem;
+    right: 2rem;
+    color: #fff;
+    border-color: #fff;
+}
+.website-container .navbar-menu .nav-buttons-container {
+    text-align: right;
+    margin-top: 10px;
+}
+.website-container .navbar-menu .nav-buttons-container > *{
+    margin-top: 10px;
+}
+.website-container .navbar-menu .button-styles.deposit {
+    background: #008d0c;
+    border: 1px solid #d5b550;
+}
+.website-container .navbar-menu .button-styles.withdrawal {
+    background: #004263;
+    border: 1px solid #d5b550;
+}
+.website-container .navbar-menu .button-styles.join-us-btn {
+    padding: 5px 10px;
+    font-size: 15px;
+}
+.website-container .navbar-menu .button-styles {
+    outline: none;
+    background: #011e2c;
+    border: 1px solid #d5b550;
+    font-weight: 500;
+    font-size: 25px;
+    color: #fff;
+    border-radius: 5%;
+    box-shadow: 0 0 9px #ffffff33;
+    transition: all .4s ease-in-out;
+}
+.website-container .navbar-menu .button-styles:hover {
+    background-color: #d5b550;
+    color: #011e2c;
+}
+/* secondary navbar */
+.website-container .navbar-menu .secondary-navbar {
+    padding: 0;
+}
+.website-container .navbar-menu .secondary-navbar span > a {
+    color: #d5b550;
+    text-decoration: none;
+}
+.website-container .navbar-menu .secondary-navbar .contact-us-whatsapp {
+    border: 1px solid #d5b550;
+    padding: 5px 10px;
+}
+.website-container .navbar-menu .secondary-navbar .contact-us-whatsapp > span {
+    display: inline;
+}
+.website-container .navbar-menu .secondary-navbar .contact-us-whatsapp span a > i {
+    display: inline;
+    margin-right: 5px;
+}
+.website-container .navbar-menu .secondary-navbar .contact-us-whatsapp span a > i::before {
+    margin-right: 5px;
+}
+.website-container .navbar-menu .secondary-navbar .contact-us-whatsapp span a i > p {
+    display: inline;
+}
+.website-container .navbar-menu .secondary-navbar .time-date-container > * {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+.website-container .navbar-menu .secondary-navbar .time-date-container .date-container {
+    margin-right: 10px;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    box-shadow: inset 0 0 10px 2px #d54b8f, 0 0 10px 2px #d54b8f;
+}
+.website-container .navbar-menu .secondary-navbar .time-date-container .time-container {
+    margin-right: 10px;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    box-shadow: inset 0 0 10px 2px #d54b8f, 0 0 10px 2px #d54b8f;
+}
+
+/* deposit modal */
+.website-container .modal-container-first .modal-content-styles .modal-body .modal-form-style .form-group .exchange-type{
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #d5b550;
+}
+.website-container .modal-container-first .modal-content-styles .modal-body .modal-form-style .form-group > .small-text-deposit {
+    color: red;
+    text-transform: uppercase;
+}
+/* Join us modal */
+.website-container .modal-container-first .modal-content-styles {
+    background-color: #3c3c3c;
+}
+.website-container .modal-container-first .modal-content-styles .modal-body .modal-header-styles > h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #d5b550;
+}
+.website-container .modal-container-first .modal-content-styles .modal-body .modal-form-style .form-group {
+    position: relative;
+}
+.website-container .modal-container-first .modal-content-styles .modal-body .modal-form-style .form-group.checkbox-form-group > label {
+    color: #d5b550;
+    text-transform: uppercase;
+    font-size: 12px;
+    position: relative;
+}
+.website-container .modal-container-first .modal-content-styles .modal-body .modal-form-style .form-group.checkbox-form-group {
+    margin-bottom: 0;
+}
+.website-container .modal-container-first .modal-content-styles .modal-body .modal-form-style .form-group > label {
+    color: #d5b550;
+    text-transform: uppercase;
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    transition: all .4s ease-in;
+}
+.website-container .modal-container-first .modal-content-styles .modal-body .modal-form-style .form-group input:not(.checkboxes):focus~label,
+.website-container .modal-container-first .modal-content-styles .modal-body .modal-form-style .form-group input:not(.checkboxes):valid~label {
+    color: #fff;
+    top: -12;
+    font-size: 10px;
+}
+.website-container .modal-container-first .modal-content-styles .modal-body .modal-form-style .form-group > input:not(.checkboxes) {
+    display: block;
+    width: 100%;
+    color: #fff;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #d5b550;
+}
+.website-container .modal-container-first .modal-content-styles .modal-body .modal-form-style .form-group > button {
+    width: calc(50% - 5.5px);
+    background: #d5b550;
+    outline: none;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 5px 10px;
+    box-shadow: 0 0 3px #fff;
+    transition: all .3s ease;
+}
+.website-container .modal-container-first .modal-content-styles .modal-body .modal-form-style .form-group > button:hover {
+    background-color: #011e2c;
+    color: #d5b550;
+
+}
+/* image slider carousel */
+.website-container .image-slider:not(.casino-slider) {
+    height: 60vh;
+    margin-top: 172px;
+}
+.website-container .image-slider.casino-slider {
+    height: 350px;
+}
+.website-container .image-slider .carousel-inner {
+    height: 100%;
+}
+.website-container .image-slider .carousel-inner .carousel-item picture > img {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.website-container .image-slider .carousel-buttons-styles > li {
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    background-color: #e5ac37;
+}
+/* inner page casino control carousel */
+.website-container .image-slider.casino-slider .carousel-controls.carousel-control-prev {
+    left: 1rem;
+}
+.website-container .image-slider.casino-slider .carousel-controls.carousel-control-next {
+    left: 3rem;
+    right: unset;
+}
+.website-container .image-slider.casino-slider .carousel-controls {
+    position: absolute;
+    display: flex;
+    color: #011e2c;
+    background: #012334b8;
+    bottom: 10px;
+    padding: 5px;
+    width: unset;
+    top: unset;
+    opacity: unset;
+}
+/* website section general */
+.website-container > section:not(.secondary-footer) {
+    padding: 50px 15px;
+}
+/* website section header */
+.website-container  .section-header {
+    justify-content: center;
+    position: relative;
+}
+.website-container .section-header > h2 {
+    text-transform: uppercase;
+    color: #e5ac37;
+}
+.website-container .section-header > h2:before {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #e5ac37;
+    top: calc(50% - 0.5px);
+    width: 100px;
+    margin-left: -130px;
+}
+.website-container .section-header > h2:after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #e5ac37;
+    top: calc(50% - 0.5px);
+    width: 100px;
+    margin-left: 22px;
+}
+/* website section contents */
+.website-container .section-container .section-contents {
+    justify-content: center;
+    position: relative;
+}
+.website-container .section-container .section-contents .card {
+    background-color: #011e2c;
+    box-shadow: 0 0 9px #73737382;
+    border: none;
+    overflow: hidden;
+    position: relative;
+    margin: 15px 0;
+}
+.website-container section .section-contents .card .hover-over-styles {
+    display: none;
+}
+.website-container section .section-contents .card:hover .hover-over-styles > h6 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+}
+.website-container section .section-contents .card:hover .hover-over-styles {
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00000099;
+
+}
+/* website how to start section */
+.website-container .how-to-start-section {
+    background: linear-gradient(#e1e1e1, #fff);
+    background-image: url("../Assets/Image/how-to-bg-3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.website-container .how-to-start-section .steps-container {
+    flex-wrap: nowrap;
+}
+.website-container .how-to-start-section .steps-contents {
+    text-align: center;
+    color: #fff;
+    padding: 0 5rem;
+}
+.website-container .how-to-start-section .steps-contents > p {
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.website-container .how-to-start-section .steps-contents .howto-image {
+    margin-bottom: 15px;
+}
+/* marquee section  */
+.website-container .exchange-section marquee .section-contents .marquee-element {
+    position: relative;
+    left: 100%;
+    animation: marquee 9.6s linear infinite;
+}
+.website-container .exchange-section marquee .section-contents .marquee-element:nth-child(1) {
+    animation-delay: 0.8s;
+  }
+  .website-container .exchange-section marquee .section-contents .marquee-element:nth-child(2) {
+    animation-delay: 1.6s;
+  }
+  .website-container .exchange-section marquee .section-contents .marquee-element:nth-child(3) {
+    animation-delay: 2.4s;
+  }
+  .website-container .exchange-section marquee .section-contents .marquee-element:nth-child(4) {
+    animation-delay: 3.2s;
+  }
+  .website-container .exchange-section marquee .section-contents .marquee-element:nth-child(5) {
+    animation-delay: 4s;
+  }
+  .website-container .exchange-section marquee .section-contents .marquee-element:nth-child(6) {
+    animation-delay: 4.8s;
+  }
+
+/* website section exchange */
+.website-container .exchange-section {
+    background-color: #011e2c;
+}
+.exchange-section .section-contents .card_image {
+    text-align: center;
+}
+.website-container .exchange-section .section-container .section-contents {
+    flex-wrap: nowrap;
+}
+/* website dealer terms section */
+
+.website-container .dealer-terms-section .section-container .card:hover .dealer-hover-over-styles {
+    display: inline-block;
+
+}
+/* live games section */
+.website-container .live-games-section {
+    background: #011e2c;
+}
+.website-container .live-games-section .header-games > h2 {
+    color: #ffffffb0;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.website-container .live-games-section .games-blurbs .blurb {
+    display: inline-block;
+    position: relative;
+    border: 1px solid #b0b9b4;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: all .3s ease-in-out;
+}
+.website-container .live-games-section .games-blurbs .blurb .hover-over-style {
+    display: none;
+}
+.website-container .live-games-section .games-blurbs .blurb:hover .hover-over-style {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: rgb(98 101 155 / 45%);
+    height: 268px;
+}
+.website-container .live-games-section .games-blurbs .blurb .hover-over-style > button {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    background: #e5ac37;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    left: 35%;
+    animation: slideRightToLeft .4s;
+}
+.website-container .live-games-section .games-blurbs .blurb:hover {
+    border: 1px solid #e5ac37;
+}
+.website-container .live-games-section .games-blurbs .blurb > h4 {
+    color: #abb2b9;
+    font-size: 15px;
+    margin: 10px 0 10px 10px;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+}
+.website-container .live-games-section .games-blurbs .blurb:hover > h4 {
+    color: #e5ac37;
+}
+/* contact us section */
+.website-container .contact-us-section{
+    background: #ececec;
+    padding: 7rem 6rem;
+}
+.website-container .contact-us-section .container {
+    background: #fff;
+    padding: 5rem 10rem;
+}
+.website-container .contact-us-section .contact-us-contents .form-contact-us .form-group {
+    position: relative;
+    width: calc(50% - 5.5px);
+    display: inline-block;
+    margin-right: 3px;
+}
+.website-container .contact-us-section .contact-us-contents .form-contact-us .form-group.textarea-form{
+    width: 100%;
+}
+.website-container .contact-us-section .contact-us-contents .form-contact-us .form-group.textarea-form > textarea {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #d5b550;
+}
+.website-container .contact-us-section .contact-us-contents .form-contact-us .form-group > input {
+    display: block;
+    width: 100%;
+    color: #000;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #d5b550;
+}
+.website-container .contact-us-section .contact-us-contents .form-contact-us .form-group > label {
+    color: #d5b550;
+    text-transform: uppercase;
+    font-size: 15px;
+    position: absolute;
+    transition: all .4s ease-in;
+    top: 14px;
+}
+.website-container .contact-us-section .contact-us-contents .form-contact-us .form-group > input:focus~label,
+.website-container .contact-us-section .contact-us-contents .form-contact-us .form-group > input:valid~label{
+    color: #011e2c;
+    top: -3px;
+    font-size: 10px;
+}
+.website-container .contact-us-section .contact-us-contents .form-contact-us .form-group.submit-btn {
+    text-align: center;
+    margin: 5rem 0 0 0;
+}
+.website-container .contact-us-section .contact-us-contents .form-contact-us .form-group.submit-btn > button {
+    width: 100%;
+    background-color: #d5b550;
+    border: none;
+    font-weight: 500;
+    font-size: 20px;
+    color: #011e2c;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    transition: all .4s ease;
+}
+.website-container .contact-us-section .contact-us-contents .form-contact-us .form-group.submit-btn:hover > button {
+    background-color: #011e2c;
+    color: #d5b550;
+}
+/* website  follow us section */
+.website-container .aboutus-section {
+    background-color: #011e2c;
+
+}
+.website-container .aboutus-section .section-contents .social-media-contents {
+    text-align: center;
+}
+.website-container .aboutus-section .section-contents .social-media-contents > a {
+    margin-right: 5px;
+}
+.website-container .aboutus-section .section-contents .social-media-contents a > img {
+    width: 66px;
+    height: 66px;
+}
+.aboutus-section .section-contents .col-md-2.mr-4 {
+    height: 64px;
+}
+.website-container .aboutus-section .section-container .section-contents .footer-items {
+    list-style: none;
+    margin-left: 10px;
+}
+.website-container .aboutus-section .section-container .section-contents .footer-items > .footer-item {
+    margin-bottom: 10px;
+    color: #fff;
+    transition: all .2s;
+    text-align: center;
+}
+.website-container .aboutus-section .section-container .section-contents .footer-items .footer-item > a {
+    color: #fff;
+    text-decoration: none;
+    transition: all .2s;
+}
+.website-container .aboutus-section .section-container .section-contents .footer-items > .footer-item:hover {
+    color: #e5ac37;
+}
+.website-container .aboutus-section .section-container .section-contents .footer-items > .footer-item:hover > a {
+    color: #e5ac37;
+}
+/* footer section */
+.website-container .footer-section {
+    width: 100%;
+    border-bottom: 1px solid #e5ac37;
+    background-color: #ececec;
+}
+/* secondary footer */
+.website-container .secondary-footer {
+    border-top: 1px solid #e5ac37;
+    background-color: #011e2c;
+}
+.website-container .secondary-footer .secondary-footer-contents {
+    margin-right: 15px;
+}
+.website-container .secondary-footer .secondary-footer-contents > span {
+    padding-right: 15px;
+}
+.website-container .secondary-footer .secondary-footer-contents span > a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all .4s ease-in;
+}
+.website-container .secondary-footer .secondary-footer-contents span > a:hover {
+    color: #e5ac37;
+}
+.website-container .aboutus-section .section-container .section-contents.payment div > img {
+    border-radius: 5px;
+    transition: all .3s ease-in;
+}
+.website-container .aboutus-section .section-container .section-contents.payment div:hover > img {
+    transform: scale(1.1);
+}
+
+/* chatbot styles start */
+.website-container .whatsapp-chatbot {
+    box-sizing: border-box !important;
+    outline: none !important;
+    position: fixed;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 1px 15px rgba(32, 33, 36, 0.28);
+    bottom: 90px;
+    right: 30px;
+    overflow: hidden;
+    z-index: 99;
+    background-color: #e6ddd4;
+}
+.website-container .whatsapp-chatbot .whatsappheader-title{
+    background-color: #095e54;
+    color: #fff;
+    padding: 10px 20px;
+}
+.website-container .whatsapp-chatbot .whatsappheader-title .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.website-container .whatsapp-chatbot .whatsappheader-title .close-btn > button { 
+    background: none;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+}
+.website-container .whatsapp-chatbot .whatsappheader-title .whatsapp-img-container > img {
+    border-radius: 100%;
+    width: 50px;
+    float: left;
+    margin: 0 10px 0 0;
+}
+.website-container .whatsapp-chatbot .whatsapp-body {
+    padding: 40px 40px 40px 10px;
+}
+.website-container .whatsapp-chatbot .whatsapp-body::before {
+    display: block;
+    position: absolute;
+    content: "";
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    opacity: 0.08;
+    background-image: url(../Assets/Image/whatsapp.png);
+}
+.website-container .whatsapp-chatbot .whatsapp-body .whatsapp-chatbubble {
+    background: #fff;
+    border-radius: 0 10px 10px 10px;
+    padding: 9px 20px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.13) 0px 1px 0.5px;
+}
+.website-container .whatsapp-chatbot .whatsapp-body .whatsapp-chatbubble .chatbubble-container > h6 {
+    position: absolute;
+    top: -23px;
+    color: #e5ac37;
+    left: 0;
+}
+.website-container .whatsapp-chatbot .whatsapp-body .whatsapp-chatbubble .chatbubble-container > p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+.website-container .whatsapp-chatbot .whatsapp-body .whatsapp-chatbubble .chatbubble-container > small {
+    position: absolute;
+    bottom: 1px;
+    right: 15px;
+    color: #a6a6a6;
+}
+.website-container .whatsapp-chatbot .whatsapp-send-msg {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+}
+.website-container .whatsapp-chatbot .whatsapp-send-msg > input {
+    display: inline-block;
+    border: none;
+    font-family: "Arial", sans-serif;
+    width: 90%;
+    height: 100%;
+    outline: none;
+    resize: none;
+    padding: 10px;
+    font-size: 14px;
+}
+.website-container .whatsapp-chatbot .whatsapp-send-msg .sendbtn-image-whatsapp {
+    display: inline-block;
+    width: 10%;
+    background: #eee;
+    padding: 10px;
+    position: absolute;
+    height: 100%;
+}
+.website-container .blantershow-chat {
+    background: #fff;
+    color: #404040;
+    position: fixed;
+    display: flex;
+    font-weight: 400;
+    justify-content: space-between;
+    z-index: 98;
+    bottom: 25px;
+    right: 30px;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 1px 15px rgba(32, 33, 36, 0.28);
+}
+.website-container .blantershow-chat svg {
+    transform: scale(1.2);
+    margin: 0 10px 0 0;
+}
+@keyframes slideRightToLeft {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: 35%;
+    }
+}
+@keyframes slideCarousel {
+    0% {
+        transform: rotate3d(1, 1, 1, 0deg) translate3d(0px, 10px, 10px);
+    }
+    100% {
+        transform: rotate3d(0, 1, 0, 50deg) translate3d(0px, 10px, 10px);
+    }
+}
+@keyframes marquee {
+    0%   { left: 100%; }
+    100% { left: -100%; }
+  }
+/* small phones */
+@media (min-width: 280px){
+    .website-container .image-slider:not(.casino-slider){
+        margin-top: 306px;
+    }
+    .website-container .live-games-section .games-blurbs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .website-container .navbar-menu .secondary-navbar {
+        position: absolute;
+        left: 24%;
+        top: 1rem;
+        right: 76%;
+    }
+    .website-container .navbar-menu .nav-buttons-container {
+        text-align: right;
+        margin-top: 10px;
+        position: absolute;
+        top: 4rem;
+        right: 11rem;
+    }
+    .website-container .navbar-menu .navbar-list {
+        position: relative;
+        top: 0;
+        left: 3rem;
+    }
+    .website-container .aboutus-section .section-container {
+        flex-direction: column;
+    }
+    .website-container .aboutus-section .section-container > .col {
+        margin-bottom: 2rem;
+    }
+    .website-container .live-games-section {
+        margin-top: 256px;
+    }
+}
+/* ipad */
+@media (min-width: 768px){
+    .website-container .navbar-menu .button-styles,
+    .website-container .navbar-menu .button-styles.join-us-btn {
+        font-size: 40px;
+    }
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1024px) {
+    .website-container .navbar-menu .button-styles, 
+    .website-container .navbar-menu .button-styles.join-us-btn {
+        font-size: 18px;
+    }
+    .website-container .navbar-menu .secondary-navbar,
+    .website-container .navbar-menu .nav-buttons-container {
+        position: inherit;
+    }
+    .website-container .navbar-menu .navbar-list {
+        position: relative;
+        top: 3rem;
+    }
+    .website-container .aboutus-section .section-container {
+        flex-direction: row;
+    }
+    .website-container .aboutus-section .section-contents .social-media-contents a > img {
+        width: 50px;
+        height: 50px;
+    }
+    .website-container .live-games-section {
+        margin-top: 122px;
+    }
+}
+/* laptops */
+@media (min-width: 1200px){
+    .website-container .image-slider:not(.casino-slider) {
+        margin-top: 171px;
+    }
+    .website-container .navbar-menu .button-styles {
+        font-size: 25px;
+    }
+    .website-container .navbar-menu .button-styles.join-us-btn {
+        font-size: 15px;
+    }
+    .website-container .aboutus-section .section-contents .social-media-contents a > img {
+        width: 66px;
+        height: 66px;
+    }
+}
